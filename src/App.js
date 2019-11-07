@@ -7,6 +7,7 @@ import { Route, Switch, NavLink, Redirect } from 'react-router-dom'
 
 class App extends Component {
   render() {
+    console.log('props from App.js', this.props)
   return (
     <main className="App">
       <header>
@@ -29,4 +30,4 @@ class App extends Component {
   )}
 }
 
-export default App;
+export default withRouter(App);
