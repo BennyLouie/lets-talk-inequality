@@ -3,7 +3,7 @@ import GenderGapFacts from './components/GenderGapFacts';
 import AgeGapFacts from './components/AgeGapFacts';
 import RacialGapFacts from './components/RacialGapFacts';
 import './App.css';
-import { Route, Switch, NavLink } from 'react-router-dom'
+import { Route, Switch, NavLink, Redirect } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -23,6 +23,7 @@ class App extends Component {
         <Route path={'/genderfacts'} component={GenderGapFacts} />
         <Route path={'/agefacts'} component={AgeGapFacts} />
         <Route path={'/racialfacts'} component={RacialGapFacts} />
+        <Redirect to='genderfacts' />
       </Switch>
     </main>
   )}
