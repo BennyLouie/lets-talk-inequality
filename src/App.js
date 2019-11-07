@@ -3,7 +3,7 @@ import GenderGapFacts from './components/GenderGapFacts';
 import AgeGapFacts from './components/AgeGapFacts';
 import RacialGapFacts from './components/RacialGapFacts';
 import './App.css';
-import { Route, Switch, NavLink, Redirect } from 'react-router-dom'
+import { Route, Switch, NavLink, Redirect, withRouter } from 'react-router-dom'
 
 class App extends Component {
   render() {
